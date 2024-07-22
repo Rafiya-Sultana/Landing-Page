@@ -1,0 +1,129 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techno Tune Motors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" th:href="@{~/static/css/style.css}">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" th:href="@{#}">
+                <img th:src="@{~/static/images/logo.png}" alt="Logo.jpg" width="150" height="150" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tech-tune-motors/index}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tech-tune-motors/index}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"th:href="@{/tech-tune-motors/index}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tech-tune-motors/index}">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tech-tune-motors/index}">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/tech-tune-motors/index}">Contact</a>
+                    </li>
+                </ul>
+                <a th:href="@{/tech-tune-motors/index}" class="btn btn-brand ms-lg-3">Enquiry</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Enquiry-->
+       <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-uppercase text-white fw-semibold display-1">Tech Tune Motors</h1>
+                    <h5 class="text-white mt-3 mb-4">Your query has successfully submitted. Soon we will revert back you. Thank You!</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="bg-grey">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6 ">
+                        <a th:href="@{#}"><img th:src="@{~/static/images/logo_foter.png}" width="150" height="150"></a>
+                        <p class="footer">Discover a full spectrum of services at TechTune Motors.</p>
+                        <div>
+                            <a th:href="@{#}"><i class="ri-twitter-fill"></i></a>
+                            <a th:href="@{#}"><i class="ri-instagram-fill"></i></a>
+                            <a th:href="@{#}"><i class="ri-github-fill"></i></a>
+                            <a th:href="@{#}"><i class="ri-whatsapp-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h5>SERVICES</h5>
+                        <div class="line"></div>
+                        <ul class="footer">
+                            <li><a th:href="@{#}">Air Conditioning</a></li>
+                            <li><a th:href="@{#}">Automotive Filters</a></li>
+                            <li><a th:href="@{#}">Electrical Systems</a></li>
+                            <li><a th:href="@{#}">Brake Repairs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h5>ABOUT</h5>
+                        <div class="line"></div>
+                        <ul class="footer">
+                            <li><a th:href="@{#}">Blog</a></li>
+                            <li><a th:href="@{#}">Services</a></li>
+                            <li><a th:href="@{#}">Testimonials</a></li>
+                            <li><a th:href="@{#}">Others</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5>CONTACT US</h5>
+                        <div class="line"></div>
+                        <ul class="footer">
+                            <li>Techno Tune Motors</li>
+                            <li>Rajarajeshwari Nagar, Bangalore - 560098 (Near Double Road Essar Petrol Bunk)</li>
+                            <li>techtunemotors3@gmail.com</li>
+                            <li>+91 8884622068</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">&copy 2024 All rights reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Designed by <a th:href="@{#}">RAFIYA</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</body>
+
+</html>
